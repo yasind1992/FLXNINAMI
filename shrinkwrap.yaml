@@ -1,0 +1,537 @@
+dependencies:
+  '@cliqz/adblocker-puppeteer': 1.23.8
+  colors: 1.4.0
+  cross-fetch: 3.1.5
+  fs: 0.0.1-security
+  node-bash-title: 0.0.2
+  node-fetch: 3.2.6
+  prompt-sync: 4.2.0
+  puppeteer-extra-plugin-recaptcha: 3.5.0
+  puppeteer-extra-plugin-recaptcha-capmonster: 1.0.5
+  puppeteer-extra-plugin-stealth: 2.9.0
+  unique-names-generator: 4.7.1
+packages:
+  /@cliqz/adblocker-content/1.23.8:
+    dependencies:
+      '@cliqz/adblocker-extended-selectors': 1.23.8
+    dev: false
+    resolution:
+      integrity: sha512-5Wm/OSA6H8AUVFi8SDff6xJ4zT/1VCrNoUnevFEi3e0MCmdQUvn+cJc03Saky7Ch5oLSJKTXNNMyPaODZLz24A==
+  /@cliqz/adblocker-extended-selectors/1.23.8:
+    dev: false
+    resolution:
+      integrity: sha512-5xx47oT2Q9E3vkfEm/EzSs7cAPi8WNWtu7kJcGa/urVkDchJwdkdelvQ2Dof+k5icI5AqZorZSsk9Q7w2bLxrA==
+  /@cliqz/adblocker-puppeteer/1.23.8:
+    dependencies:
+      '@cliqz/adblocker': 1.23.8
+      '@cliqz/adblocker-content': 1.23.8
+      tldts-experimental: 5.7.82
+    dev: false
+    peerDependencies:
+      puppeteer: '>5'
+    resolution:
+      integrity: sha512-Ca1/DBqQXsOpKTFVAHX6OpLTSEupXmUkUWHj6iXhLLleC7RPISN5B0b801VDmaGRqoC5zKRxn0vYbIfpgCWVug==
+  /@cliqz/adblocker/1.23.8:
+    dependencies:
+      '@cliqz/adblocker-content': 1.23.8
+      '@cliqz/adblocker-extended-selectors': 1.23.8
+      '@remusao/guess-url-type': 1.2.1
+      '@remusao/small': 1.2.1
+      '@remusao/smaz': 1.9.1
+      '@types/chrome': 0.0.183
+      '@types/firefox-webext-browser': 94.0.1
+      tldts-experimental: 5.7.82
+    dev: false
+    resolution:
+      integrity: sha512-xM1JYTv5dA+pPP4x4IVZdjkM9aAsakTnShFLuHLzMxMHd20eUB91NXm4kK6acw9nHwG6rCyat6+u7TvAqSmR6g==
+  /@remusao/guess-url-type/1.2.1:
+    dev: false
+    resolution:
+      integrity: sha512-rbOqre2jW8STjheOsOaQHLgYBaBZ9Owbdt8NO7WvNZftJlaG3y/K9oOkl8ZUpuFBisIhmBuMEW6c+YrQl5inRA==
+  /@remusao/small/1.2.1:
+    dev: false
+    resolution:
+      integrity: sha512-7MjoGt0TJMVw1GPKgWq6SJPws1SLsUXQRa43Umht+nkyw2jnpy3WpiLNqGdwo5rHr5Wp9B2W/Pm5RQp656UJdw==
+  /@remusao/smaz-compress/1.9.1:
+    dependencies:
+      '@remusao/trie': 1.4.1
+    dev: false
+    resolution:
+      integrity: sha512-E2f48TwloQu3r6BdLOGF2aczeH7bJ/32oJGqvzT9SKur0cuUnLcZ7ZXP874E2fwmdE+cXzfC7bKzp79cDnmeyw==
+  /@remusao/smaz-decompress/1.9.1:
+    dev: false
+    resolution:
+      integrity: sha512-TfjKKprYe3n47od8auhvJ/Ikj9kQTbDTe71ynKlxslrvvUhlIV3VQSuwYuMWMbdz1fIs0H/fxCN1Z8/H3km6/A==
+  /@remusao/smaz/1.9.1:
+    dependencies:
+      '@remusao/smaz-compress': 1.9.1
+      '@remusao/smaz-decompress': 1.9.1
+    dev: false
+    resolution:
+      integrity: sha512-e6BLuP8oaXCZ9+v46Is4ilAZ/Vq6YLgmBP204Ixgk1qTjXmqvFYG7+AS7v9nsZdGOy96r9DWGFbbDVgMxwu1rA==
+  /@remusao/trie/1.4.1:
+    dev: false
+    resolution:
+      integrity: sha512-yvwa+aCyYI/UjeD39BnpMypG8N06l86wIDW1/PAc6ihBRnodIfZDwccxQN3n1t74wduzaz74m4ZMHZnB06567Q==
+  /@types/chrome/0.0.183:
+    dependencies:
+      '@types/filesystem': 0.0.32
+      '@types/har-format': 1.2.8
+    dev: false
+    resolution:
+      integrity: sha512-sYI1qGY2oB6U5GFyuoSsVJsi2ytuEe92QrQTXQRwkISN8yn1gPY5qRq1XSwKN17yjvZTgxxeHw2ZoSHMti6qYg==
+  /@types/debug/4.1.7:
+    dependencies:
+      '@types/ms': 0.7.31
+    dev: false
+    resolution:
+      integrity: sha512-9AonUzyTjXXhEOa0DnqpzZi6VHlqKMswga9EXjpXnnqxwLtdvPPtlO8evrI5D9S6asFRCQ6v+wpiUKbw+vKqyg==
+  /@types/filesystem/0.0.32:
+    dependencies:
+      '@types/filewriter': 0.0.29
+    dev: false
+    resolution:
+      integrity: sha512-Yuf4jR5YYMR2DVgwuCiP11s0xuVRyPKmz8vo6HBY3CGdeMj8af93CFZX+T82+VD1+UqHOxTq31lO7MI7lepBtQ==
+  /@types/filewriter/0.0.29:
+    dev: false
+    resolution:
+      integrity: sha512-BsPXH/irW0ht0Ji6iw/jJaK8Lj3FJemon2gvEqHKpCdDCeemHa+rI3WBGq5z7cDMZgoLjY40oninGxqk+8NzNQ==
+  /@types/firefox-webext-browser/94.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-I6iHRQJSTZ+gYt2IxdH2RRAMvcUyK8v5Ig7fHQR0IwUNYP7hz9+cziBVIKxLCO6XI7fiyRsNOWObfl3/4Js2Lg==
+  /@types/har-format/1.2.8:
+    dev: false
+    resolution:
+      integrity: sha512-OP6L9VuZNdskgNN3zFQQ54ceYD8OLq5IbqO4VK91ORLfOm7WdT/CiT/pHEBSQEqCInJ2y3O6iCm/zGtPElpgJQ==
+  /@types/ms/0.7.31:
+    dev: false
+    resolution:
+      integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==
+  /ansi-regex/4.1.1:
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-ILlv4k/3f6vfQ4OoP2AGvirOktlQ98ZEL1k9FaQjxa3L1abBgbuTDAdPOpvbGncC0BTVQrl+OM8xZGK6tWXt7g==
+  /arr-union/3.1.0:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-sKpyeERZ02v1FeCZT8lrfJq5u6goHCtpTAzPwJYe7c8SPFOboNjNg1vz2L4VTn9T4PQxEx13TbXLmYUcS6Ug7Q==
+  /asynckit/0.4.0:
+    dev: false
+    resolution:
+      integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
+  /axios/0.27.2:
+    dependencies:
+      follow-redirects: 1.15.1
+      form-data: 4.0.0
+    dev: false
+    resolution:
+      integrity: sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==
+  /clone-deep/0.2.4:
+    dependencies:
+      for-own: 0.1.5
+      is-plain-object: 2.0.4
+      kind-of: 3.2.2
+      lazy-cache: 1.0.4
+      shallow-clone: 0.1.2
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-we+NuQo2DHhSl+DP6jlUiAhyAjBQrYnpOk15rN6c6JSPScjiCLh8IbSU+VTcph6YS3o7mASE8a0+gbZ7ChLpgg==
+  /colors/1.4.0:
+    dev: false
+    engines:
+      node: '>=0.1.90'
+    resolution:
+      integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
+  /combined-stream/1.0.8:
+    dependencies:
+      delayed-stream: 1.0.0
+    dev: false
+    engines:
+      node: '>= 0.8'
+    resolution:
+      integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
+  /cross-fetch/3.1.5:
+    dependencies:
+      node-fetch: 2.6.7
+    dev: false
+    resolution:
+      integrity: sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==
+  /data-uri-to-buffer/4.0.0:
+    dev: false
+    engines:
+      node: '>= 12'
+    resolution:
+      integrity: sha512-Vr3mLBA8qWmcuschSLAOogKgQ/Jwxulv3RNE4FXnYWRGujzrRWQI4m12fQqRkwX06C0KanhLr4hK+GydchZsaA==
+  /debug/4.3.4:
+    dependencies:
+      ms: 2.1.2
+    dev: false
+    engines:
+      node: '>=6.0'
+    resolution:
+      integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
+  /deepmerge/4.2.2:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==
+  /delayed-stream/1.0.0:
+    dev: false
+    engines:
+      node: '>=0.4.0'
+    resolution:
+      integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==
+  /fetch-blob/3.1.5:
+    dependencies:
+      node-domexception: 1.0.0
+      web-streams-polyfill: 3.2.1
+    dev: false
+    engines:
+      node: ^12.20 || >= 14.13
+    resolution:
+      integrity: sha512-N64ZpKqoLejlrwkIAnb9iLSA3Vx/kjgzpcDhygcqJ2KKjky8nCgUQ+dzXtbrLaWZGZNmNfQTsiQ0weZ1svglHg==
+  /follow-redirects/1.15.1:
+    dev: false
+    engines:
+      node: '>=4.0'
+    resolution:
+      integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==
+  /for-in/0.1.8:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-F0to7vbBSHP8E3l6dCjxNOLuSFAACIxFy3UehTUlG7svlXi37HHsDkyVcHo0Pq8QwrE+pXvWSVX3ZT1T9wAZ9g==
+  /for-in/1.0.2:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-7EwmXrOjyL+ChxMhmG5lnW9MPt1aIeZEwKhQzoBUdTV0N3zuwWDZYVJatDvZ2OyzPUvdIAZDsCetk3coyMfcnQ==
+  /for-own/0.1.5:
+    dependencies:
+      for-in: 1.0.2
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-SKmowqGTJoPzLO1T0BBJpkfp3EMacCMOuH40hOUbrbzElVktk4DioXVM99QkLCyKoiuOmyjgcWMpVz2xjE7LZw==
+  /form-data/4.0.0:
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      mime-types: 2.1.35
+    dev: false
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==
+  /formdata-polyfill/4.0.10:
+    dependencies:
+      fetch-blob: 3.1.5
+    dev: false
+    engines:
+      node: '>=12.20.0'
+    resolution:
+      integrity: sha512-buewHzMvYL29jdeQTVILecSaZKnt/RJWjoZCF5OW60Z67/GmSLBkOFM7qh1PI3zFNtJbaZL5eQu1vLfazOwj4g==
+  /fs-extra/10.1.0:
+    dependencies:
+      graceful-fs: 4.2.10
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: false
+    engines:
+      node: '>=12'
+    resolution:
+      integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==
+  /fs/0.0.1-security:
+    dev: false
+    resolution:
+      integrity: sha512-3XY9e1pP0CVEUCdj5BmfIZxRBTSDycnbqhIOGec9QYtmVH2fbLpj86CFWkrNOkt/Fvty4KZG5lTglL9j/gJ87w==
+  /graceful-fs/4.2.10:
+    dev: false
+    resolution:
+      integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
+  /is-buffer/1.1.6:
+    dev: false
+    resolution:
+      integrity: sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
+  /is-extendable/0.1.1:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-5BMULNob1vgFX6EjQw5izWDxrecWK9AM72rugNr0TFldMOi0fj6Jk+zeKIt0xGj4cEfQIJth4w3OKWOJ4f+AFw==
+  /is-plain-object/2.0.4:
+    dependencies:
+      isobject: 3.0.1
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-h5PpgXkWitc38BBMYawTYMWJHFZJVnBquFE57xFpjB8pJFiF6gZ+bU+WyI/yqXiFR5mdLsgYNaPe8uao6Uv9Og==
+  /isobject/3.0.1:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-WhB9zCku7EGTj/HQQRz5aUQEUeoQZH2bWcltRErOpymJ4boYE6wL9Tbr23krRPSZ+C5zqNSrSw+Cc7sZZ4b7vg==
+  /jsonfile/6.1.0:
+    dependencies:
+      universalify: 2.0.0
+    dev: false
+    optionalDependencies:
+      graceful-fs: 4.2.10
+    resolution:
+      integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==
+  /kind-of/2.0.1:
+    dependencies:
+      is-buffer: 1.1.6
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-0u8i1NZ/mg0b+W3MGGw5I7+6Eib2nx72S/QvXa0hYjEkjTknYmEYQJwGu3mLC0BrhtJjtQafTkyRUQ75Kx0LVg==
+  /kind-of/3.2.2:
+    dependencies:
+      is-buffer: 1.1.6
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-NOW9QQXMoZGg/oqnVNoNTTIFEIid1627WCffUBJEdMxYApq7mNE7CpzucIPc+ZQg25Phej7IJSmX3hO+oblOtQ==
+  /lazy-cache/0.2.7:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-gkX52wvU/R8DVMMt78ATVPFMJqfW8FPz1GZ1sVHBVQHmu/WvhIWE4cE1GBzhJNFicDeYhnwp6Rl35BcAIM3YOQ==
+  /lazy-cache/1.0.4:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-RE2g0b5VGZsOCFOCgP7omTRYFqydmZkBwl5oNnQ1lDYC57uyO9KqNnNVxT7COSHTxrRCWVcAVOcbjk+tvh/rgQ==
+  /merge-deep/3.0.3:
+    dependencies:
+      arr-union: 3.1.0
+      clone-deep: 0.2.4
+      kind-of: 3.2.2
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-qtmzAS6t6grwEkNrunqTBdn0qKwFgNWvlxUbAV8es9M7Ot1EbyApytCnvE0jALPa46ZpKDUo527kKiaWplmlFA==
+  /mime-db/1.52.0:
+    dev: false
+    engines:
+      node: '>= 0.6'
+    resolution:
+      integrity: sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==
+  /mime-types/2.1.35:
+    dependencies:
+      mime-db: 1.52.0
+    dev: false
+    engines:
+      node: '>= 0.6'
+    resolution:
+      integrity: sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==
+  /mixin-object/2.0.1:
+    dependencies:
+      for-in: 0.1.8
+      is-extendable: 0.1.1
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-ALGF1Jt9ouehcaXaHhn6t1yGWRqGaHkPFndtFVHfZXOvkIZ/yoGaSi0AHVTafb3ZBGg4dr/bDwnaEKqCXzchMA==
+  /ms/2.1.2:
+    dev: false
+    resolution:
+      integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+  /node-bash-title/0.0.2:
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-jyNrzOkIsirgVMsjgD+F8QkCnXJsokMosEqYCskH6KeT0zziQZe1hrnCNwh30+E+JJatlEoijd+HioVKV4Y84Q==
+  /node-domexception/1.0.0:
+    dev: false
+    engines:
+      node: '>=10.5.0'
+    resolution:
+      integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==
+  /node-fetch/2.6.7:
+    dependencies:
+      whatwg-url: 5.0.0
+    dev: false
+    engines:
+      node: 4.x || >=6.0.0
+    peerDependencies:
+      encoding: ^0.1.0
+    resolution:
+      integrity: sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
+  /node-fetch/3.2.6:
+    dependencies:
+      data-uri-to-buffer: 4.0.0
+      fetch-blob: 3.1.5
+      formdata-polyfill: 4.0.10
+    dev: false
+    engines:
+      node: ^12.20.0 || ^14.13.1 || >=16.0.0
+    resolution:
+      integrity: sha512-LAy/HZnLADOVkVPubaxHDft29booGglPFDr2Hw0J1AercRh01UiVFm++KMDnJeH9sHgNB4hsXPii7Sgym/sTbw==
+  /prompt-sync/4.2.0:
+    dependencies:
+      strip-ansi: 5.2.0
+    dev: false
+    resolution:
+      integrity: sha512-BuEzzc5zptP5LsgV5MZETjDaKSWfchl5U9Luiu8SKp7iZWD5tZalOxvNcZRwv+d2phNFr8xlbxmFNcRKfJOzJw==
+  /puppeteer-extra-plugin-recaptcha-capmonster/1.0.5:
+    dependencies:
+      axios: 0.27.2
+      debug: 4.3.4
+    dev: false
+    engines:
+      node: '>=12.0.0'
+    resolution:
+      integrity: sha512-tCo6WDG47MtIL+Shjzfhg7LKZ8HQG5jXJG6OlC2sQatoQi2ciWDgMczHiytCA6AYJtybYoXnXNN3yHsb75nvFg==
+  /puppeteer-extra-plugin-recaptcha/3.5.0:
+    dependencies:
+      debug: 4.3.4
+      merge-deep: 3.0.3
+      puppeteer-extra-plugin: 3.2.0
+    dev: false
+    engines:
+      node: '>=9.11.2'
+    peerDependencies:
+      puppeteer-extra: '*'
+    resolution:
+      integrity: sha512-OcSc2zVbhyJ+kBPx4KRZhUbmDduD+Hw7/RXFi5e/MK8qelo/9G8/+YqzGqBAJRSYti2kJHeg3nmWd42UirbMIA==
+  /puppeteer-extra-plugin-stealth/2.9.0:
+    dependencies:
+      debug: 4.3.4
+      puppeteer-extra-plugin: 3.2.0
+      puppeteer-extra-plugin-user-preferences: 2.3.1
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-erZ9lkIcOkfYmLPP2jv2AiqvNBFhQJinWJhcm40pqSjwJTsZXHsTARUyRCsBYEEBvNIs3Wz3E0zVlTRc4IJ6Hg==
+  /puppeteer-extra-plugin-user-data-dir/2.3.1:
+    dependencies:
+      debug: 4.3.4
+      fs-extra: 10.1.0
+      puppeteer-extra-plugin: 3.2.0
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-yhaYMaNFdfQ1LbA94ZElW1zU8rh+MFmO+GZA0gtQ8BXc+UZ6aRrWS9flIZvlXDzk+ZsXhCbTEohEwZ8lEDLRVA==
+  /puppeteer-extra-plugin-user-preferences/2.3.1:
+    dependencies:
+      debug: 4.3.4
+      deepmerge: 4.2.2
+      puppeteer-extra-plugin: 3.2.0
+      puppeteer-extra-plugin-user-data-dir: 2.3.1
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-t/FyGQj2aqtHOROqL02z+k2kNQe0cjT0Hd9pG5FJ7x0JXx1722PhOuK7FeJLQMJ+BLl2YvCUgaWSC8Zohjts5A==
+  /puppeteer-extra-plugin/3.2.0:
+    dependencies:
+      '@types/debug': 4.1.7
+      debug: 4.3.4
+      merge-deep: 3.0.3
+    dev: false
+    engines:
+      node: '>=9.11.2'
+    peerDependencies:
+      puppeteer-extra: '*'
+    resolution:
+      integrity: sha512-wbiw12USE3b+maMk/IMaroYsz7rusVI9G+ml6pCFCnFFh91Z9BAEiVzhCpOHuquVXEiCCsDTWhDUgvdNxQHOyw==
+  /shallow-clone/0.1.2:
+    dependencies:
+      is-extendable: 0.1.1
+      kind-of: 2.0.1
+      lazy-cache: 0.2.7
+      mixin-object: 2.0.1
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-J1zdXCky5GmNnuauESROVu31MQSnLoYvlyEn6j2Ztk6Q5EHFIhxkMhYcv6vuDzl2XEzoRr856QwzMgWM/TmZgw==
+  /strip-ansi/5.2.0:
+    dependencies:
+      ansi-regex: 4.1.1
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==
+  /tldts-core/5.7.82:
+    dev: false
+    resolution:
+      integrity: sha512-cfUY8fjmfwJDcocXfFlUbngftKwzx7NzFLcVf8/FTLjRX9hgQE8MIls0KNTRsvYMD6x4oXgZipAAv0WyuDLCxw==
+  /tldts-experimental/5.7.82:
+    dependencies:
+      tldts-core: 5.7.82
+    dev: false
+    resolution:
+      integrity: sha512-D6qJoxbv1S8gMKOXYfCU6p/Uryd0mCGlN8vDJNPNIkzFYZENLjooPpdyKOX6V/b3wzLt+Emn2PSKhwdSKr6W2g==
+  /tr46/0.0.3:
+    dev: false
+    resolution:
+      integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
+  /unique-names-generator/4.7.1:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-lMx9dX+KRmG8sq6gulYYpKWZc9RlGsgBR6aoO8Qsm3qvkSJ+3rAymr+TnV8EDMrIrwuFJ4kruzMWM/OpYzPoow==
+  /universalify/2.0.0:
+    dev: false
+    engines:
+      node: '>= 10.0.0'
+    resolution:
+      integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
+  /web-streams-polyfill/3.2.1:
+    dev: false
+    engines:
+      node: '>= 8'
+    resolution:
+      integrity: sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==
+  /webidl-conversions/3.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==
+  /whatwg-url/5.0.0:
+    dependencies:
+      tr46: 0.0.3
+      webidl-conversions: 3.0.1
+    dev: false
+    resolution:
+      integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  '@cliqz/adblocker-puppeteer': ^1.23.4
+  colors: ^1.4.0
+  cross-fetch: ^3.1.5
+  fs: ^0.0.1-security
+  node-bash-title: ^0.0.2
+  node-fetch: ^3.1.0
+  prompt-sync: ^4.1.6
+  puppeteer-extra-plugin-recaptcha: ^3.5.0
+  puppeteer-extra-plugin-recaptcha-capmonster: ^1.0.3
+  puppeteer-extra-plugin-stealth: ^2.9.0
+  unique-names-generator: ^4.6.0
